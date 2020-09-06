@@ -1,4 +1,3 @@
 solver.rb
 answer_reward_matched_events.json
 purchase_event_generator.rb
-data/reward_matched_events_queue
