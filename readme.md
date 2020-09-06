@@ -71,6 +71,11 @@ Third the `RewardMatchingService` should create a `RewardMatchedEvent` with the 
 }
 ```
 
+For example, the first purchase event should result in the following `RewardMatchedEvent`:
+```json
+{"purchase_event_id":6066107,"product_code_id":6535813,"quantity":3,"saver_id":6784182}
+```
+
 Note that the `PurchaseEvent` may contain a quantity purchased greater than 1. In that case the `reward_amount_cents` from the `rewards.csv` must be multiplied by the quantity to arrive at the correct amount to award the saver.
 
 Finally, publish the `RewardMatchedEvent` using the `RewardMatchedEventPublisher` by calling `RewardMatchedEventPublisher.publish(reward_matched_event)`.
