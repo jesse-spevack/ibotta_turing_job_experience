@@ -19,7 +19,7 @@ The following tools I enjoy using nearly everyday, but never used at Turing:
 The following tools I use nearly everyday, but never used at Turing:
 - [Jira](https://www.atlassian.com/software/jira)
 - [Confluence](https://www.atlassian.com/software/confluence)
-- [rvm](https://rvm.io/)
+- [rbenv](https://github.com/rbenv/rbenv)
 - [Docker](https://www.docker.com/)
 - [Travis](https://travis-ci.org/)
 - [Code Climate](https://codeclimate.com/)
@@ -45,6 +45,9 @@ My typical day involves:
 ## Tech Challenge
 
 Let's implement a `RewardMatchingService`!
+
+![Reward Matching Service Diagram](/images/reward_matching_service.png)
+Format: ![Reward Matching Service Diagram](url)
 
 Ibotta receives many different formats of purchase data from users. Purchases may be an image of a receipt, a row of a csv file, a webhook, etc. Purchase data is normalized to make it easier for our system to treat purchases from different sources the same. Today, you will implement the core business functionality of Ibotta - matching purchases with rewards. 
 
