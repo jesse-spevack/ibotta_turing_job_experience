@@ -1,5 +1,10 @@
 # Ibotta - Turing Job Experience Day
+
+![logo](/images/logo.png)
+
 This repository includes materials and activities for the Ibotta-Turing Job Experience day. The goal of the Job Experience Day is to give students who about 10 weeks into their Turing journeys a glimpse at some of what to expect as they embark on their new high fullfillment careers in technology.
+
+![Turing job experience agenda](/images/agenda.png)
 
 ## Day in the Life of an Ibotta Developer
 
@@ -47,7 +52,6 @@ My typical day involves:
 Let's implement a `RewardMatchingService`!
 
 ![Reward Matching Service Diagram](/images/reward_matching_service.png)
-Format: ![Reward Matching Service Diagram](url)
 
 Ibotta receives many different formats of purchase data from users. Purchases may be an image of a receipt, a row of a csv file, a webhook, etc. Purchase data is normalized to make it easier for our system to treat purchases from different sources the same. Today, you will implement the core business functionality of Ibotta - matching purchases with rewards. 
 
