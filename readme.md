@@ -6,6 +6,8 @@ This repository includes materials and activities for the Ibotta-Turing Job Expe
 
 ![Turing job experience agenda](/images/agenda.png)
 
+Please join our [#ibotta_turing_job_experience_092020](https://join.slack.com/share/zt-hkq3puls-bz3WgxIo2blVnXenq6mUwQ) channel in Turing Slack.
+
 ## Day in the Life of an Ibotta Developer
 
 ### Tools
