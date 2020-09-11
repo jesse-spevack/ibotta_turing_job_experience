@@ -51,6 +51,7 @@ My typical day involves:
 
 ## Tech Challenge
 
+### Goal
 Let's implement a `RewardMatchingService`!
 
 ![Reward Matching Service Diagram](/images/reward_matching_service.png)
@@ -59,6 +60,7 @@ Ibotta receives many different formats of purchase data from users. Purchases ma
 
 A reward is a coupon or offer for cash back on a purchase. For example, Ibotta may have a reward that says savers (an Ibotta user) should earn $0.50 when they buy a package of Oreos. We can determine whether or not there is a match between what the saver has purchased and the reward by comparing the product code of the item purchased with the product code on the reward. If the product codes are the same, the saver is entitled to a cash back award.
 
+### Task Overview
 First, the service should use the following to read purchase event `json` from the [queue](https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Queues).
 
 ```ruby
@@ -89,7 +91,14 @@ Note that the `PurchaseEvent` may contain a quantity purchased greater than 1. I
 
 Finally, publish the `RewardMatchedEvent` using the `RewardMatchedEventPublisher` by calling `RewardMatchedEventPublisher.publish(reward_matched_event)`.
 
-You are encouraged to write tests for your `RewardMatchingService` and encapsulate functionality within multiple methods.
+### Getting Started
+Clone this repo `git clone https://github.com/jesse-spevack/ibotta_turing_job_experience.git`
+Change directories into the project directory `cd ibotta_turing_job_experience`
+Run rspec `rspec`
+Get the test to pass!
+
+#### Troubleshooting
+This project requires ruby 2.7.1. You can change the version of ruby the project uses by modifying the `.ruby-version` file.
 
 ## Quick Advice
 
