@@ -6,7 +6,7 @@ describe PurchaseEventQueue do
 
   describe '#get_next_purchase_event' do
     context 'when the queue contains events' do
-      subject(:queue) { described_class.new('./data/purchase_events.json') }
+      subject(:queue) { described_class.new }
 
       let(:purchase_event) do
           {
