@@ -92,10 +92,57 @@ Note that the `PurchaseEvent` may contain a quantity purchased greater than 1. I
 Finally, publish the `RewardMatchedEvent` using the `RewardMatchedEventPublisher` by calling `RewardMatchedEventPublisher.publish(reward_matched_event)`.
 
 ### Getting Started
-Clone this repo `git clone https://github.com/jesse-spevack/ibotta_turing_job_experience.git`
-Change directories into the project directory `cd ibotta_turing_job_experience`
-Run rspec `rspec`
+Clone this repo 
+```bash
+git clone https://github.com/jesse-spevack/ibotta_turing_job_experience.git
+```
+
+Change directories into the project directory
+```bash
+cd ibotta_turing_job_experience
+```
+
+Run rspec
+```ruby
+rspec
+```
+
 Get the test to pass!
+```bash
+~/codes/ibotta_turing_job_experience master*
+❯ rspec
+
+PurchaseEventQueue
+  #get_next_purchase_event
+    when the queue contains events
+      returns the next purchase event from the queue
+    when queue is empty
+      returns nil
+
+RewardMatchedEventPublisher
+  publishes event to stdout
+
+RewardMatchingService
+  #create_reward_matched_event
+    creates a new reward matched event (FAILED - 1)
+
+Failures:
+
+  1) RewardMatchingService#create_reward_matched_event creates a new reward matched event
+     Failure/Error: purchase_event_id: purchase_event_id,
+
+     NameError:
+       undefined local variable or method `purchase_event_id' for #<RewardMatchingService:0x00007fd2e80be1c8>
+     # ./lib/reward_matching_service.rb:18:in `create_reward_matched_event'
+     # ./spec/reward_matching_service_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+Finished in 0.0082 seconds (files took 0.21477 seconds to load)
+4 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/reward_matching_service_spec.rb:34 # RewardMatchingService#create_reward_matched_event creates a new reward matched event
+```
 
 #### Troubleshooting
 This project requires ruby 2.7.1. You can change the version of ruby the project uses by modifying the `.ruby-version` file.

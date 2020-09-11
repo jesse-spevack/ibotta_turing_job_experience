@@ -15,9 +15,9 @@ class RewardMatchingService
     # Get the saver_id and purchase_event_id from purchase event
     # Output a reward matched event
     return {
-      saver_id: saver_id
-      purchase_event_id: purchase_event_id
-      saver_id: purchase_event_id
+      purchase_event_id: purchase_event_id,
+      saver_id: saver_id,
+      award_amount_cents: award_amount_cents,
     }
   end
 end
